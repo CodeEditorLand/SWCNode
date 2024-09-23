@@ -1,7 +1,7 @@
 {
 	"dependencies": {
-		"@swc-node/core": "^1.13.3",
-		"@swc-node/register": "^1.10.9"
+		"@swc-node/core": "1.13.3",
+		"@swc-node/register": "1.10.9"
 	},
 	"description": "Webpack loader powered by swc",
 	"devDependencies": {},
