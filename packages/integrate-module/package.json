@@ -7,7 +7,7 @@
 	"devDependencies": {
 		"@napi-rs/simple-git": "0.1.19",
 		"@swc-node/register": "workspace:*",
-		"@swc/core": "1.7.26",
+		"@swc/core": "1.7.28",
 		"esmock": "2.6.7",
 		"ipaddr.js": "2.2.0",
 		"postgres": "3.4.4",

@@ -17,7 +17,7 @@
 		"@swc-node/register": "1.10.9"
 	},
 	"devDependencies": {
-		"@swc/core": "1.7.26",
+		"@swc/core": "1.7.28",
 		"@swc/types": "0.1.12"
 	}
 }
