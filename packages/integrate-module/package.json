@@ -1,5 +1,4 @@
 {
-	"name": "integrate-module",
 	"dependencies": {
 		"file-type": "19.5.0",
 		"p-timeout": "6.1.2"
@@ -12,5 +11,6 @@
 		"ipaddr.js": "2.2.0",
 		"postgres": "3.4.4",
 		"simple-git": "3.27.0"
-	}
+	},
+	"name": "integrate-module"
 }
