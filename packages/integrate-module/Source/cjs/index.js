@@ -2,32 +2,35 @@
 // defineProperty and default.default definitions
 
 /* eslint-disable */
-'use strict'
+"use strict";
 
-Object.defineProperty(exports, '__esModule', {
-  value: true,
-})
-exports['default'] = void 0
+Object.defineProperty(exports, "__esModule", {
+	value: true,
+});
+exports["default"] = void 0;
 
 function _typeof(obj) {
-  '@babel/helpers - typeof'
-  if (typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol') {
-    _typeof = function _typeof(obj) {
-      return typeof obj
-    }
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === 'function' && obj.constructor === Symbol && obj !== Symbol.prototype
-        ? 'symbol'
-        : typeof obj
-    }
-  }
-  return _typeof(obj)
+	"@babel/helpers - typeof";
+	if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+		_typeof = function _typeof(obj) {
+			return typeof obj;
+		};
+	} else {
+		_typeof = function _typeof(obj) {
+			return obj &&
+				typeof Symbol === "function" &&
+				obj.constructor === Symbol &&
+				obj !== Symbol.prototype
+				? "symbol"
+				: typeof obj;
+		};
+	}
+	return _typeof(obj);
 }
 
 var _default = function _default() {
-  return 'default.default'
-}
+	return "default.default";
+};
 
-exports['default'] = _default
+exports["default"] = _default;
 /* eslint-enable */
