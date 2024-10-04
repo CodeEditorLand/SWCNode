@@ -1,1 +1,1 @@
-export const FIXTURE = 'fixture'
+export const FIXTURE = "fixture";
