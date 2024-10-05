@@ -1,7 +1,7 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 ## [1.8.12](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.8.11...@swc-node/jest@1.8.12) (2024-07-17)
 
@@ -51,19 +51,26 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- support compile js files. close [#761](https://github.com/swc-project/swc-node/issues/761) ([#767](https://github.com/swc-project/swc-node/issues/767)) ([016f1aa](https://github.com/swc-project/swc-node/commit/016f1aab2a17d2512d30b5a12848ed1941b59e49))
+-   support compile js files. close
+    [#761](https://github.com/swc-project/swc-node/issues/761)
+    ([#767](https://github.com/swc-project/swc-node/issues/767))
+    ([016f1aa](https://github.com/swc-project/swc-node/commit/016f1aab2a17d2512d30b5a12848ed1941b59e49))
 
 # [1.8.0](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.6.9...@swc-node/jest@1.8.0) (2024-03-05)
 
 ### Features
 
-- upgrade dependencies ([#751](https://github.com/swc-project/swc-node/issues/751)) ([653bd13](https://github.com/swc-project/swc-node/commit/653bd13c4ac84bd4bd28b886dc0f4e77362d0734))
+-   upgrade dependencies
+    ([#751](https://github.com/swc-project/swc-node/issues/751))
+    ([653bd13](https://github.com/swc-project/swc-node/commit/653bd13c4ac84bd4bd28b886dc0f4e77362d0734))
 
 # [1.7.0](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.6.9...@swc-node/jest@1.7.0) (2024-02-01)
 
 ### Features
 
-- upgrade dependencies ([#751](https://github.com/swc-project/swc-node/issues/751)) ([653bd13](https://github.com/swc-project/swc-node/commit/653bd13c4ac84bd4bd28b886dc0f4e77362d0734))
+-   upgrade dependencies
+    ([#751](https://github.com/swc-project/swc-node/issues/751))
+    ([653bd13](https://github.com/swc-project/swc-node/commit/653bd13c4ac84bd4bd28b886dc0f4e77362d0734))
 
 ## [1.6.9](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.6.8...@swc-node/jest@1.6.9) (2024-02-01)
 
@@ -81,7 +88,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- tsCompilerOptionsToSwcConfig should not override default swc config for jest ([#714](https://github.com/swc-project/swc-node/issues/714)) ([60ea642](https://github.com/swc-project/swc-node/commit/60ea64284582ce3164ca3705976b4dc4215c2504))
+-   tsCompilerOptionsToSwcConfig should not override default swc config for jest
+    ([#714](https://github.com/swc-project/swc-node/issues/714))
+    ([60ea642](https://github.com/swc-project/swc-node/commit/60ea64284582ce3164ca3705976b4dc4215c2504))
 
 ## [1.6.5](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.6.4...@swc-node/jest@1.6.5) (2023-04-24)
 
@@ -99,7 +108,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- **core:** enforce sourcemap: 'inline' for jest ([#695](https://github.com/swc-project/swc-node/issues/695)) ([2439b7e](https://github.com/swc-project/swc-node/commit/2439b7e2cd28fee7d0d1038b91baeb042a32c146))
+-   **core:** enforce sourcemap: 'inline' for jest
+    ([#695](https://github.com/swc-project/swc-node/issues/695))
+    ([2439b7e](https://github.com/swc-project/swc-node/commit/2439b7e2cd28fee7d0d1038b91baeb042a32c146))
 
 ## [1.6.1](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.6.0...@swc-node/jest@1.6.1) (2023-02-11)
 
@@ -109,7 +120,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **register:** experimental esm loader ([#643](https://github.com/swc-project/swc-node/issues/643)) ([0b4d305](https://github.com/swc-project/swc-node/commit/0b4d30505408f6f07c1ff8ea5c1953e1d22bb4e1))
+-   **register:** experimental esm loader
+    ([#643](https://github.com/swc-project/swc-node/issues/643))
+    ([0b4d305](https://github.com/swc-project/swc-node/commit/0b4d30505408f6f07c1ff8ea5c1953e1d22bb4e1))
 
 ## [1.5.9](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.5.8...@swc-node/jest@1.5.9) (2023-02-10)
 
@@ -123,7 +136,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- **register:** always inline swc helpers ([1d557ec](https://github.com/swc-project/swc-node/commit/1d557ece0d9ccbba027ff9f2d262c03d4b918bcb))
+-   **register:** always inline swc helpers
+    ([1d557ec](https://github.com/swc-project/swc-node/commit/1d557ece0d9ccbba027ff9f2d262c03d4b918bcb))
 
 ## [1.5.6](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.5.5...@swc-node/jest@1.5.6) (2023-01-05)
 
@@ -145,7 +159,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Performance Improvements
 
-- **jest:** readDefaultTsConfig should just execute once ([7223356](https://github.com/swc-project/swc-node/commit/7223356b820502627d4ab4a6e24a6ec698b9d031))
+-   **jest:** readDefaultTsConfig should just execute once
+    ([7223356](https://github.com/swc-project/swc-node/commit/7223356b820502627d4ab4a6e24a6ec698b9d031))
 
 ## [1.5.1](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.5.0...@swc-node/jest@1.5.1) (2022-04-28)
 
@@ -155,7 +170,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **jest:** read tsconfig for default jest transform options ([8c180e6](https://github.com/swc-project/swc-node/commit/8c180e68abbc66aa68f83b401d985a6c8617baa9))
+-   **jest:** read tsconfig for default jest transform options
+    ([8c180e6](https://github.com/swc-project/swc-node/commit/8c180e68abbc66aa68f83b401d985a6c8617baa9))
 
 ## [1.4.3](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.4.2...@swc-node/jest@1.4.3) (2021-12-15)
 
@@ -169,25 +185,29 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- **jest:** internal cache logic duplicated with jest cache ([43a36b9](https://github.com/swc-project/swc-node/commit/43a36b9be9aec0295a4a8d549fa189bef095d44f))
+-   **jest:** internal cache logic duplicated with jest cache
+    ([43a36b9](https://github.com/swc-project/swc-node/commit/43a36b9be9aec0295a4a8d549fa189bef095d44f))
 
 # [1.4.0](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.3.5...@swc-node/jest@1.4.0) (2021-11-08)
 
 ### Features
 
-- accept to transpile files with .mjs extension ([c1df0c8](https://github.com/swc-project/swc-node/commit/c1df0c827b8f8abaa7c5b04d837884378438385a))
+-   accept to transpile files with .mjs extension
+    ([c1df0c8](https://github.com/swc-project/swc-node/commit/c1df0c827b8f8abaa7c5b04d837884378438385a))
 
 ## [1.3.5](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.3.4...@swc-node/jest@1.3.5) (2021-10-29)
 
 ### Bug Fixes
 
-- **jest:** xxhash should be dependency ([5559136](https://github.com/swc-project/swc-node/commit/555913638c07d17470d80a9944cba9e7a18bd94c))
+-   **jest:** xxhash should be dependency
+    ([5559136](https://github.com/swc-project/swc-node/commit/555913638c07d17470d80a9944cba9e7a18bd94c))
 
 ## [1.3.4](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.3.3...@swc-node/jest@1.3.4) (2021-10-29)
 
 ### Performance Improvements
 
-- **jest:** replace sha1 with xxhash for better performance ([8d436dd](https://github.com/swc-project/swc-node/commit/8d436dd7000b9fee21c278bd294c017216e02b69))
+-   **jest:** replace sha1 with xxhash for better performance
+    ([8d436dd](https://github.com/swc-project/swc-node/commit/8d436dd7000b9fee21c278bd294c017216e02b69))
 
 ## [1.3.3](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.3.2...@swc-node/jest@1.3.3) (2021-10-16)
 
@@ -205,7 +225,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **loader:** implement tsconfig compatible loader ([8c1cd85](https://github.com/swc-project/swc-node/commit/8c1cd858a64a6b6ec6ff23811bafab7dfe30554d))
+-   **loader:** implement tsconfig compatible loader
+    ([8c1cd85](https://github.com/swc-project/swc-node/commit/8c1cd858a64a6b6ec6ff23811bafab7dfe30554d))
 
 ## [1.2.1](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.2.0...@swc-node/jest@1.2.1) (2021-04-28)
 
@@ -215,7 +236,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **jest:** support jest 27 transformerConfig ([e2a51b2](https://github.com/swc-project/swc-node/commit/e2a51b2873898dcfc0a1b03a49f48ce70ea70f0a))
+-   **jest:** support jest 27 transformerConfig
+    ([e2a51b2](https://github.com/swc-project/swc-node/commit/e2a51b2873898dcfc0a1b03a49f48ce70ea70f0a))
 
 ## [1.1.1](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.1.0...@swc-node/jest@1.1.1) (2021-03-04)
 
@@ -225,7 +247,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **jest:** cache transpile result to avoid source code to be compiled mult times ([77cc3d8](https://github.com/swc-project/swc-node/commit/77cc3d8ea82728b9b486e1b5fd898f82180c3f37))
+-   **jest:** cache transpile result to avoid source code to be compiled mult
+    times
+    ([77cc3d8](https://github.com/swc-project/swc-node/commit/77cc3d8ea82728b9b486e1b5fd898f82180c3f37))
 
 ## [1.0.3](https://github.com/swc-project/swc-node/compare/@swc-node/jest@1.0.2...@swc-node/jest@1.0.3) (2021-01-04)
 
@@ -275,14 +299,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **core:** provide jest hoist plugin ([f3638f2](https://github.com/swc-project/swc-node/commit/f3638f2004b9fb323261a301b6fe354255846965))
-- **jest:** provide jest preset config ([7750ef5](https://github.com/swc-project/swc-node/commit/7750ef5d7cff3977a2b96f4d76810043e5f0988d))
+-   **core:** provide jest hoist plugin
+    ([f3638f2](https://github.com/swc-project/swc-node/commit/f3638f2004b9fb323261a301b6fe354255846965))
+-   **jest:** provide jest preset config
+    ([7750ef5](https://github.com/swc-project/swc-node/commit/7750ef5d7cff3977a2b96f4d76810043e5f0988d))
 
 # [0.2.0](https://github.com/swc-project/swc-node/compare/@swc-node/jest@0.1.27...@swc-node/jest@0.2.0) (2020-08-28)
 
 ### Features
 
-- **core:** provide jest hoist plugin ([f3638f2](https://github.com/swc-project/swc-node/commit/f3638f2004b9fb323261a301b6fe354255846965))
+-   **core:** provide jest hoist plugin
+    ([f3638f2](https://github.com/swc-project/swc-node/commit/f3638f2004b9fb323261a301b6fe354255846965))
 
 ## [0.1.27](https://github.com/swc-project/swc-node/compare/@swc-node/jest@0.1.26...@swc-node/jest@0.1.27) (2020-08-24)
 

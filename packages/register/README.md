@@ -2,7 +2,8 @@
 
 <a href="https://npmcharts.com/compare/@swc-node/register?minimal=true"><img src="https://img.shields.io/npm/dm/@swc-node/register.svg?sanitize=true" alt="Downloads" /></a>
 
-> 🚀 Help me to become a full-time open-source developer by [sponsoring me on Github](https://github.com/sponsors/Brooooooklyn)
+> 🚀 Help me to become a full-time open-source developer by
+> [sponsoring me on Github](https://github.com/sponsors/Brooooooklyn)
 
 ## Usage
 
@@ -32,11 +33,11 @@ mocha --require @swc-node/register --watch-extensions ts,tsx "test/**/*.{ts,tsx}
 // package.json
 
 {
-  "ava": {
-    "extensions": ["ts", "tsx"],
-    "require": ["@swc-node/register"],
-    "files": ["packages/**/*.spec.{ts,tsx}"]
-  }
+	"ava": {
+		"extensions": ["ts", "tsx"],
+		"require": ["@swc-node/register"],
+		"files": ["packages/**/*.spec.{ts,tsx}"]
+	}
 }
 ```
 
@@ -52,7 +53,8 @@ SWC_NODE_PROJECT=./tsconfig.test.json mocha --require @swc-node/register --watch
 
 ### `extends`
 
-`@swc-node/register` respect the extends key in `tsconfig.json`, and use the **merged** values.
+`@swc-node/register` respect the extends key in `tsconfig.json`, and use the
+**merged** values.
 
 ### `compilerOptions.target`
 
@@ -85,12 +87,15 @@ switch (target) {
 
 ### `compilerOptions.jsx`
 
-If `filename` endsWith `.jsx` or `.tsx`, always set the `jsx: true` in `swc config` regards the `jsx` option in `tsconfig`.
-If `filename` not endsWith `.jsx` or `.tsx`, set the `jsx: Boolean(tsconfig.compilerOptions.jsx)` in `swc config`.
+If `filename` endsWith `.jsx` or `.tsx`, always set the `jsx: true` in
+`swc config` regards the `jsx` option in `tsconfig`. If `filename` not endsWith
+`.jsx` or `.tsx`, set the `jsx: Boolean(tsconfig.compilerOptions.jsx)` in
+`swc config`.
 
 ### compilerOptions.module
 
-> notes, if `compilerOptions.module` higher than `es2020`, the `dynamicImport` in `swc config` will be set to `true`.
+> notes, if `compilerOptions.module` higher than `es2020`, the `dynamicImport`
+> in `swc config` will be set to `true`.
 
 ```ts
 switch (moduleKind) {
@@ -124,6 +129,9 @@ Respect the boolean value in `tsconfig`.
 
 ### include/exclude
 
-`TypeScript` gives files list to `@swc-node/register`, if parse `tsconfig.json` failed or files list empty, `@swc-node/register` will transform all files which were required.
+`TypeScript` gives files list to `@swc-node/register`, if parse `tsconfig.json`
+failed or files list empty, `@swc-node/register` will transform all files which
+were required.
 
-And if failed to parse `tsconfig.json`, `@swc-node/register` will print warning which contains failed reason.
+And if failed to parse `tsconfig.json`, `@swc-node/register` will print warning
+which contains failed reason.

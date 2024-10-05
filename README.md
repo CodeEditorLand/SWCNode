@@ -1,8 +1,10 @@
 # `swc-node`
 
-> 🚀 Help me to become a full-time open-source developer by [sponsoring me on Github](https://github.com/sponsors/Brooooooklyn)
+> 🚀 Help me to become a full-time open-source developer by
+> [sponsoring me on Github](https://github.com/sponsors/Brooooooklyn)
 
-**_Fast `TypeScript/JavaScript` transformer without `node-gyp` and postinstall script_**.
+**_Fast `TypeScript/JavaScript` transformer without `node-gyp` and postinstall
+script_**.
 
 <p>
   <a href="https://github.com/swc-project/swc-node/actions"><img src="https://github.com/swc-project/swc-node/workflows/CI/badge.svg" alt="Build Status" /></a>
@@ -18,7 +20,7 @@ Run TypeScript with node, without compilation or typechecking:
 npm i -D @swc-node/register
 node -r @swc-node/register script.ts
 node --import @swc-node/register/esm-register script.ts # for esm project with node>=20.6
-node --loader @swc-node/register/esm script.ts # for esm project with node<=20.5, deprecated
+node --loader @swc-node/register/esm script.ts          # for esm project with node<=20.5, deprecated
 ```
 
 Pass `--enable-source-maps` to node for esm projects
@@ -35,7 +37,9 @@ SWCRC=true node -r @swc-node/register script.ts
 // your code
 ```
 
-run with shebang, add `TS_NODE_PROJECT=null`(`#!/usr/bin/env TS_NODE_PROJECT=null node --import @swc-node/register/esm-register`) to use ignore tsconfig.json
+run with shebang, add
+`TS_NODE_PROJECT=null`(`#!/usr/bin/env TS_NODE_PROJECT=null node --import @swc-node/register/esm-register`)
+to use ignore tsconfig.json
 
 ## @swc-node/core
 
@@ -45,7 +49,8 @@ Detail: [@swc-node/core](./packages/core)
 
 ### Benchmark
 
-> transform RxJS `AjaxObservable.ts` to ES2015 & CommonJS `JavaScript`. Benchmark code: [bench](./bench/index.ts)
+> transform RxJS `AjaxObservable.ts` to ES2015 & CommonJS `JavaScript`.
+> Benchmark code: [bench](./bench/index.ts)
 
 **Hardware info**:
 
@@ -98,8 +103,8 @@ Detail: [@swc-node/jest](./packages/jest)
 
 ### Performance glance
 
-> Testing in pure `TypeScript` project, compile target is `ES2018`.
-> Running with `npx jest --no-cache`, `ts-jest` was configured with `isolatedModules: true`
+> Testing in pure `TypeScript` project, compile target is `ES2018`. Running with
+> `npx jest --no-cache`, `ts-jest` was configured with `isolatedModules: true`
 
 #### ts-jest
 
@@ -133,13 +138,13 @@ Detail: [@swc-node/register](./packages/register)
 
 ### Install dependencies
 
-- `pnpm i`
+-   `pnpm i`
 
 ### Build and Test
 
-- `pnpm build`
+-   `pnpm build`
 
-- `pnpm test`
+-   `pnpm test`
 
 ## Sponsors
 

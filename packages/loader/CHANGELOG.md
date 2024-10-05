@@ -1,7 +1,7 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+All notable changes to this project will be documented in this file. See
+[Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
 ## [1.5.12](https://github.com/swc-project/swc-node/compare/@swc-node/loader@1.5.11...@swc-node/loader@1.5.12) (2024-07-17)
 
@@ -55,13 +55,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- upgrade dependencies ([#751](https://github.com/swc-project/swc-node/issues/751)) ([653bd13](https://github.com/swc-project/swc-node/commit/653bd13c4ac84bd4bd28b886dc0f4e77362d0734))
+-   upgrade dependencies
+    ([#751](https://github.com/swc-project/swc-node/issues/751))
+    ([653bd13](https://github.com/swc-project/swc-node/commit/653bd13c4ac84bd4bd28b886dc0f4e77362d0734))
 
 # [1.4.0](https://github.com/swc-project/swc-node/compare/@swc-node/loader@1.3.9...@swc-node/loader@1.4.0) (2024-02-01)
 
 ### Features
 
-- upgrade dependencies ([#751](https://github.com/swc-project/swc-node/issues/751)) ([653bd13](https://github.com/swc-project/swc-node/commit/653bd13c4ac84bd4bd28b886dc0f4e77362d0734))
+-   upgrade dependencies
+    ([#751](https://github.com/swc-project/swc-node/issues/751))
+    ([653bd13](https://github.com/swc-project/swc-node/commit/653bd13c4ac84bd4bd28b886dc0f4e77362d0734))
 
 ## [1.3.9](https://github.com/swc-project/swc-node/compare/@swc-node/loader@1.3.8...@swc-node/loader@1.3.9) (2024-02-01)
 
@@ -103,7 +107,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **register:** experimental esm loader ([#643](https://github.com/swc-project/swc-node/issues/643)) ([0b4d305](https://github.com/swc-project/swc-node/commit/0b4d30505408f6f07c1ff8ea5c1953e1d22bb4e1))
+-   **register:** experimental esm loader
+    ([#643](https://github.com/swc-project/swc-node/issues/643))
+    ([0b4d305](https://github.com/swc-project/swc-node/commit/0b4d30505408f6f07c1ff8ea5c1953e1d22bb4e1))
 
 ## [1.2.8](https://github.com/swc-project/swc-node/compare/@swc-node/loader@1.2.7...@swc-node/loader@1.2.8) (2023-02-10)
 
@@ -125,7 +131,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- **register:** @swc/core should be in peerDependencies ([cb05cae](https://github.com/swc-project/swc-node/commit/cb05cae69dd92d13593c210f8c0044b6aff8ff1c))
+-   **register:** @swc/core should be in peerDependencies
+    ([cb05cae](https://github.com/swc-project/swc-node/commit/cb05cae69dd92d13593c210f8c0044b6aff8ff1c))
 
 ## [1.2.3](https://github.com/swc-project/swc-node/compare/@swc-node/loader@1.2.2...@swc-node/loader@1.2.3) (2022-10-06)
 
@@ -135,7 +142,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- **loader:** fix logic when no compilerOptions passed by webpack ([1606f3c](https://github.com/swc-project/swc-node/commit/1606f3cf20e1a5d1d6ea3144b22366a59849822c))
+-   **loader:** fix logic when no compilerOptions passed by webpack
+    ([1606f3c](https://github.com/swc-project/swc-node/commit/1606f3cf20e1a5d1d6ea3144b22366a59849822c))
 
 ## [1.2.1](https://github.com/swc-project/swc-node/compare/@swc-node/loader@1.2.0...@swc-node/loader@1.2.1) (2022-04-28)
 
@@ -145,7 +153,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **jest:** read tsconfig for default jest transform options ([8c180e6](https://github.com/swc-project/swc-node/commit/8c180e68abbc66aa68f83b401d985a6c8617baa9))
+-   **jest:** read tsconfig for default jest transform options
+    ([8c180e6](https://github.com/swc-project/swc-node/commit/8c180e68abbc66aa68f83b401d985a6c8617baa9))
 
 ## [1.1.12](https://github.com/swc-project/swc-node/compare/@swc-node/loader@1.1.11...@swc-node/loader@1.1.12) (2021-12-15)
 
@@ -187,7 +196,8 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- **register:** always enable dynamicImport ([0eb1bf2](https://github.com/swc-project/swc-node/commit/0eb1bf2e0bce97ca70d72dc13c51c8eac221029d))
+-   **register:** always enable dynamicImport
+    ([0eb1bf2](https://github.com/swc-project/swc-node/commit/0eb1bf2e0bce97ca70d72dc13c51c8eac221029d))
 
 ## [1.1.2](https://github.com/swc-project/swc-node/compare/@swc-node/loader@1.1.1...@swc-node/loader@1.1.2) (2021-05-23)
 
@@ -197,10 +207,12 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-- **loader:** missing entry file ([8efbcd7](https://github.com/swc-project/swc-node/commit/8efbcd743688ccd6b24b2c021fa52d0eca037cd1))
+-   **loader:** missing entry file
+    ([8efbcd7](https://github.com/swc-project/swc-node/commit/8efbcd743688ccd6b24b2c021fa52d0eca037cd1))
 
 # 1.1.0 (2021-05-21)
 
 ### Features
 
-- **loader:** implement tsconfig compatible loader ([8c1cd85](https://github.com/swc-project/swc-node/commit/8c1cd858a64a6b6ec6ff23811bafab7dfe30554d))
+-   **loader:** implement tsconfig compatible loader
+    ([8c1cd85](https://github.com/swc-project/swc-node/commit/8c1cd858a64a6b6ec6ff23811bafab7dfe30554d))

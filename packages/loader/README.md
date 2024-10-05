@@ -1,6 +1,7 @@
 # `@swc-node/loader`
 
-> 🚀 Help me to become a full-time open-source developer by [sponsoring me on Github](https://github.com/sponsors/Brooooooklyn)
+> 🚀 Help me to become a full-time open-source developer by
+> [sponsoring me on Github](https://github.com/sponsors/Brooooooklyn)
 
 <a href="https://npmcharts.com/compare/@swc-node/loader?minimal=true"><img src="https://img.shields.io/npm/dm/@swc-node/loader.svg?sanitize=true" alt="Downloads" /></a>
 
@@ -38,4 +39,5 @@
 
 ## Differences between [swc-loader](https://github.com/swc-project/swc-loader)
 
-This `loader` is compatible with `tsconfig.json` and `compilerOptions` in `tsconfig.json`.
+This `loader` is compatible with `tsconfig.json` and `compilerOptions` in
+`tsconfig.json`.
