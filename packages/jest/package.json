@@ -1,6 +1,6 @@
 {
 	"dependencies": {
-		"@node-rs/xxhash": "1.7.3",
+		"@node-rs/xxhash": "1.7.4",
 		"@swc-node/core": "1.13.3",
 		"@swc-node/register": "1.10.9"
 	},
