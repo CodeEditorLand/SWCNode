@@ -1,19 +1,53 @@
 {
-	"dependencies": {
-		"@swc-node/core": "1.13.3",
-		"@swc-node/register": "1.10.9"
-	},
-	"description": "Webpack loader powered by swc",
-	"devDependencies": {},
-	"files": [
-		"lib",
-		"LICENSE",
-		"index.js"
-	],
-	"funding": {
-		"type": "github",
-		"url": "https://github.com/sponsors/Brooooooklyn"
-	},
-	"main": "./index.js",
-	"name": "@swc-node/loader"
+  "name": "@swc-node/loader",
+  "version": "1.5.12",
+  "description": "Webpack loader powered by swc",
+  "keywords": [
+    "swc",
+    "babel",
+    "loader",
+    "ts-loader",
+    "babel-loader",
+    "swc-loader",
+    "napi-rs",
+    "napi",
+    "node-api",
+    "tsc"
+  ],
+  "author": "LongYinan <longyinan.brooklyn@bytedance.com>",
+  "homepage": "https://github.com/swc-project/swc-node",
+  "license": "MIT",
+  "main": "./index.js",
+  "files": [
+    "lib",
+    "LICENSE",
+    "index.js"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "dependencies": {
+    "@swc-node/core": "^1.13.3",
+    "@swc-node/register": "^1.10.9"
+  },
+  "peerDependencies": {
+    "typescript": ">= 4.3",
+    "webpack": ">= 5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swc-project/swc-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swc-project/swc-node/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Brooooooklyn"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "webpack": "^5.92.1"
+  }
 }
