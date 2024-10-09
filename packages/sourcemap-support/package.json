@@ -1,11 +1,11 @@
 {
 	"dependencies": {
-		"source-map-support": "^0.5.21",
-		"tslib": "^2.7.0"
+		"source-map-support": "0.5.21",
+		"tslib": "2.7.0"
 	},
 	"description": "Runtime sourcemap support in NodeJS",
 	"devDependencies": {
-		"@types/source-map-support": "^0.5.10"
+		"@types/source-map-support": "0.5.10"
 	},
 	"files": [
 		"lib",

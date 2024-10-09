@@ -1,16 +1,16 @@
 {
 	"dependencies": {
-		"file-type": "^19.5.0",
-		"p-timeout": "^6.1.2"
+		"file-type": "19.5.0",
+		"p-timeout": "6.1.2"
 	},
 	"devDependencies": {
-		"@napi-rs/simple-git": "^0.1.19",
+		"@napi-rs/simple-git": "0.1.19",
 		"@swc-node/register": "workspace:*",
-		"@swc/core": "^1.7.26",
-		"esmock": "^2.6.7",
-		"ipaddr.js": "^2.2.0",
-		"postgres": "^3.4.4",
-		"simple-git": "^3.27.0"
+		"@swc/core": "1.7.26",
+		"esmock": "2.6.7",
+		"ipaddr.js": "2.2.0",
+		"postgres": "3.4.4",
+		"simple-git": "3.27.0"
 	},
 	"name": "integrate-module"
 }
