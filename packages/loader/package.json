@@ -1,19 +1,19 @@
 {
-	"dependencies": {
-		"@swc-node/core": "1.13.3",
-		"@swc-node/register": "1.10.9"
-	},
+	"name": "@swc-node/loader",
 	"description": "Webpack loader powered by swc",
-	"devDependencies": {},
-	"files": [
-		"lib",
-		"LICENSE",
-		"index.js"
-	],
 	"funding": {
 		"type": "github",
 		"url": "https://github.com/sponsors/Brooooooklyn"
 	},
 	"main": "./index.js",
-	"name": "@swc-node/loader"
+	"files": [
+		"lib",
+		"LICENSE",
+		"index.js"
+	],
+	"dependencies": {
+		"@swc-node/core": "1.13.3",
+		"@swc-node/register": "1.10.9"
+	},
+	"devDependencies": {}
 }
