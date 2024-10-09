@@ -1,3 +1,3 @@
-const { register } = require('./lib/register')
+const { register } = require("./lib/register");
 
-register()
+register();

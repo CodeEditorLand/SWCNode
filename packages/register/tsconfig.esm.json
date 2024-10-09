@@ -1,9 +1,14 @@
 {
-  "extends": "./tsconfig.json",
-  "compilerOptions": {
-    "module": "esnext",
-    "outDir": "esm"
-  },
-  "include": [],
-  "files": ["./esm.mts", "./esm-register.mts", "register.d.ts", "./read-default-tsconfig.d.ts"]
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"module": "esnext",
+		"outDir": "esm"
+	},
+	"include": [],
+	"files": [
+		"./esm.mts",
+		"./esm-register.mts",
+		"register.d.ts",
+		"./read-default-tsconfig.d.ts"
+	]
 }

@@ -1,20 +1,9 @@
 {
-	"dependencies": {
-		"@swc-node/core": "1.13.3",
-		"@swc-node/sourcemap-support": "0.5.1",
-		"colorette": "2.0.20",
-		"debug": "4.3.7",
-		"oxc-resolver": "1.12.0",
-		"pirates": "4.0.6",
-		"tslib": "2.7.0"
-	},
+	"name": "@swc-node/register",
 	"description": "SWC node register",
-	"devDependencies": {
-		"@swc/core": "1.7.26",
-		"@swc/helpers": "0.5.13",
-		"@types/debug": "4.1.12",
-		"lodash": "4.17.21",
-		"sinon": "19.0.2"
+	"funding": {
+		"type": "github",
+		"url": "https://github.com/sponsors/Brooooooklyn"
 	},
 	"exports": {
 		".": {
@@ -33,6 +22,7 @@
 			"require": "./lib/register.js"
 		}
 	},
+	"main": "index.js",
 	"files": [
 		"index.js",
 		"lib",
@@ -41,10 +31,20 @@
 		"LICENSE",
 		"*.d.ts"
 	],
-	"funding": {
-		"type": "github",
-		"url": "https://github.com/sponsors/Brooooooklyn"
+	"dependencies": {
+		"@swc-node/core": "1.13.3",
+		"@swc-node/sourcemap-support": "0.5.1",
+		"colorette": "2.0.20",
+		"debug": "4.3.7",
+		"oxc-resolver": "1.12.0",
+		"pirates": "4.0.6",
+		"tslib": "2.7.0"
 	},
-	"main": "index.js",
-	"name": "@swc-node/register"
+	"devDependencies": {
+		"@swc/core": "1.7.26",
+		"@swc/helpers": "0.5.13",
+		"@types/debug": "4.1.12",
+		"lodash": "4.17.21",
+		"sinon": "19.0.2"
+	}
 }

@@ -1,11 +1,11 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "composite": true,
-    "rootDir": "./src",
-    "outDir": "./lib"
-  },
-  "include": ["."],
-  "exclude": ["lib"],
-  "references": [{ "path": "../core" }, { "path": "../register" }]
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"composite": true,
+		"rootDir": "./src",
+		"outDir": "./lib"
+	},
+	"include": ["."],
+	"exclude": ["lib"],
+	"references": [{ "path": "../core" }, { "path": "../register" }]
 }

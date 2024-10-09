@@ -1,15 +1,15 @@
 {
-  "extends": "../../tsconfig.json",
-  "compilerOptions": {
-    "composite": true,
-    "rootDir": ".",
-    "outDir": "./lib",
-  },
-  "references": [
-    {
-      "path": "../core",
-    },
-  ],
-  "include": ["."],
-  "exclude": ["lib", "__test__"],
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"composite": true,
+		"rootDir": ".",
+		"outDir": "./lib"
+	},
+	"references": [
+		{
+			"path": "../core"
+		}
+	],
+	"include": ["."],
+	"exclude": ["lib", "__test__"]
 }
