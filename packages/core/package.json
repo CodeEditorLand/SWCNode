@@ -1,17 +1,17 @@
 {
-	"name": "@swc-node/core",
 	"description": "Faster swc nodejs binding",
+	"devDependencies": {
+		"@swc/core": "1.7.26",
+		"@swc/types": "0.1.12"
+	},
+	"files": [
+		"lib"
+	],
 	"funding": {
 		"type": "github",
 		"url": "https://github.com/sponsors/Brooooooklyn"
 	},
 	"main": "lib/index.js",
-	"typings": "lib/index.d.ts",
-	"files": [
-		"lib"
-	],
-	"devDependencies": {
-		"@swc/core": "1.7.26",
-		"@swc/types": "0.1.12"
-	}
+	"name": "@swc-node/core",
+	"typings": "lib/index.d.ts"
 }
