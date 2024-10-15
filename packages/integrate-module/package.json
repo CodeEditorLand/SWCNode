@@ -1,12 +1,12 @@
 {
 	"dependencies": {
-		"file-type": "19.5.0",
+		"file-type": "19.6.0",
 		"p-timeout": "6.1.2"
 	},
 	"devDependencies": {
 		"@napi-rs/simple-git": "0.1.19",
 		"@swc-node/register": "workspace:*",
-		"@swc/core": "1.7.35",
+		"@swc/core": "1.7.36",
 		"esmock": "2.6.7",
 		"ipaddr.js": "2.2.0",
 		"postgres": "3.4.4",

@@ -1,7 +1,7 @@
 {
 	"description": "Faster swc nodejs binding",
 	"devDependencies": {
-		"@swc/core": "1.7.35",
+		"@swc/core": "1.7.36",
 		"@swc/types": "0.1.12"
 	},
 	"files": [
