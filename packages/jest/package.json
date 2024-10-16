@@ -1,23 +1,23 @@
 {
-	"dependencies": {
-		"@node-rs/xxhash": "1.7.4",
-		"@swc-node/core": "1.13.3",
-		"@swc-node/register": "1.10.9"
-	},
+	"name": "@swc-node/jest",
 	"description": "swc preprocessor for jest with source map support",
-	"devDependencies": {
-		"@swc/core": "1.7.36",
-		"@swc/types": "0.1.12"
-	},
-	"files": [
-		"lib",
-		"jest-preset.js",
-		"LICENSE"
-	],
 	"funding": {
 		"type": "github",
 		"url": "https://github.com/sponsors/Brooooooklyn"
 	},
 	"main": "./lib/index.js",
-	"name": "@swc-node/jest"
+	"files": [
+		"lib",
+		"jest-preset.js",
+		"LICENSE"
+	],
+	"dependencies": {
+		"@node-rs/xxhash": "1.7.4",
+		"@swc-node/core": "1.13.3",
+		"@swc-node/register": "1.10.9"
+	},
+	"devDependencies": {
+		"@swc/core": "1.7.36",
+		"@swc/types": "0.1.12"
+	}
 }
