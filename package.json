@@ -1,24 +1,4 @@
 {
-	"name": "swc-node",
-	"description": "Faster swc nodejs binding",
-	"workspaces": [
-		"packages/*"
-	],
-	"scripts": {
-		"bench": "node -r @swc-node/register ./bench/index.ts",
-		"build": "tsc -b tsconfig.json",
-		"test:jest": "jest --config jest.config.js",
-		"test:module": "cross-env SWC_NODE_PROJECT=packages/integrate-module/tsconfig.json node --import=@swc-node/register/esm-register packages/integrate-module/src/index.ts",
-		"version": "pnpm install && git add ."
-	},
-	"lint-staged": {
-		"*.@(js|ts|tsx|mts)": [
-			"oxlint --fix"
-		],
-		"*.@(js|ts|tsx|mts|yml|yaml|md|json)": [
-			"prettier --write"
-		]
-	},
 	"ava": {
 		"cache": false,
 		"environmentVariables": {
@@ -36,6 +16,7 @@
 			"@swc-node/register"
 		]
 	},
+	"description": "Faster swc nodejs binding",
 	"devDependencies": {
 		"@babel/plugin-transform-typescript": "7.25.7",
 		"@swc-node/core": "workspace:*",
@@ -57,5 +38,24 @@
 		"rxjs": "7.8.1",
 		"sinon": "19.0.2",
 		"tslib": "2.8.0"
-	}
+	},
+	"lint-staged": {
+		"*.@(js|ts|tsx|mts)": [
+			"oxlint --fix"
+		],
+		"*.@(js|ts|tsx|mts|yml|yaml|md|json)": [
+			"prettier --write"
+		]
+	},
+	"name": "swc-node",
+	"scripts": {
+		"bench": "node -r @swc-node/register ./bench/index.ts",
+		"build": "tsc -b tsconfig.json",
+		"test:jest": "jest --config jest.config.js",
+		"test:module": "cross-env SWC_NODE_PROJECT=packages/integrate-module/tsconfig.json node --import=@swc-node/register/esm-register packages/integrate-module/src/index.ts",
+		"version": "pnpm install && git add ."
+	},
+	"workspaces": [
+		"packages/*"
+	]
 }
