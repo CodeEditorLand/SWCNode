@@ -7,7 +7,7 @@
 		"@napi-rs/simple-git": "0.1.19",
 		"@swc-node/register": "workspace:*",
 		"@swc/core": "1.7.36",
-		"esmock": "2.6.7",
+		"esmock": "2.6.8",
 		"ipaddr.js": "2.2.0",
 		"postgres": "3.4.4",
 		"simple-git": "3.27.0"
