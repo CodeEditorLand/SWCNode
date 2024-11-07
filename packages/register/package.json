@@ -10,7 +10,7 @@
 	},
 	"description": "SWC node register",
 	"devDependencies": {
-		"@swc/core": "1.7.42",
+		"@swc/core": "1.9.1",
 		"@swc/helpers": "0.5.13",
 		"@types/debug": "4.1.12",
 		"lodash": "4.17.21",
