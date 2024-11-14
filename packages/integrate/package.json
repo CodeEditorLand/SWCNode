@@ -3,7 +3,7 @@
 	"devDependencies": {
 		"@swc-node/core": "1.13.3",
 		"@swc-node/register": "workspace:*",
-		"@swc/helpers": "0.5.13",
+		"@swc/helpers": "0.5.15",
 		"sinon": "19.0.2"
 	},
 	"name": "@swc-node/integrate"
