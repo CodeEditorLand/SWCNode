@@ -7,7 +7,7 @@
 	"description": "swc preprocessor for jest with source map support",
 	"devDependencies": {
 		"@swc/core": "1.9.2",
-		"@swc/types": "0.1.12"
+		"@swc/types": "0.1.17"
 	},
 	"files": [
 		"lib",

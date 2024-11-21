@@ -2,7 +2,7 @@
 	"description": "Faster swc nodejs binding",
 	"devDependencies": {
 		"@swc/core": "1.9.2",
-		"@swc/types": "0.1.12"
+		"@swc/types": "0.1.17"
 	},
 	"files": [
 		"lib"
