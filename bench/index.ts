@@ -40,10 +40,12 @@ const SOURCE_PATH = join(
 	"ajax",
 	"ajax.ts",
 );
+
 const SOURCE_CODE = fs.readFileSync(SOURCE_PATH, "utf-8");
 
 async function run() {
 	let defer: () => void;
+
 	const task = new Promise<void>((resolve) => {
 		defer = resolve;
 	});
@@ -117,6 +119,7 @@ async function run() {
 
 async function runAsync(parallel = 1, suite = asyncSuite) {
 	let defer: () => void;
+
 	const task = new Promise<void>((resolve) => {
 		defer = resolve;
 	});

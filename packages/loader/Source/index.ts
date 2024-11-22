@@ -15,17 +15,22 @@ export function loader(
 	source: string,
 ) {
 	const callback = this.async();
+
 	const { compilerOptions, configFile, fastRefresh } =
 		this.getOptions() ?? {};
+
 	const { options: assignedOptions } = convertCompilerOptionsFromJson(
 		compilerOptions,
 		"",
 	);
+
 	const options =
 		!assignedOptions || Object.keys(assignedOptions).length === 0
 			? readDefaultTsConfig(configFile)
 			: assignedOptions;
+
 	const swcOptions = tsCompilerOptionsToSwcConfig(options, this.resourcePath);
+
 	if (fastRefresh) {
 		if (swcOptions.react) {
 			swcOptions.react.refresh = true;

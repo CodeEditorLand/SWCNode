@@ -38,7 +38,9 @@ function transformOption(
 ): SwcOptions {
 	const opts = options ?? {};
 	opts.esModuleInterop = opts.esModuleInterop ?? true;
+
 	const moduleType = options?.module ?? "commonjs";
+
 	return {
 		filename: path,
 		jsc: options?.swc?.swcrc

@@ -35,8 +35,11 @@ const injectInlineSourceMap = ({
 }): string => {
 	if (map) {
 		SourcemapMap.set(filename, map);
+
 		const base64Map = Buffer.from(map, "utf8").toString("base64");
+
 		const sourceMapContent = `//# sourceMappingURL=data:application/json;charset=utf-8;base64,${base64Map}`;
+
 		return `${code}\n${sourceMapContent}`;
 	}
 	return code;
@@ -94,10 +97,12 @@ export function compile(
 		options.fallbackToTs(filename)
 	) {
 		delete options.fallbackToTs;
+
 		const { outputText, sourceMapText } = ts.transpileModule(sourcecode, {
 			fileName: filename,
 			compilerOptions: options,
 		});
+
 		return injectInlineSourceMap({
 			filename,
 			code: outputText,
@@ -106,6 +111,7 @@ export function compile(
 	}
 
 	let swcRegisterConfig: Options;
+
 	if (process.env.SWCRC) {
 		// when SWCRC environment variable is set to true it will use swcrc file
 		swcRegisterConfig = {
@@ -129,6 +135,7 @@ export function compile(
 			filename,
 			swcRegisterConfig,
 		);
+
 		return injectInlineSourceMap({ filename, code, map });
 	}
 }
@@ -142,6 +149,7 @@ export function register(
 	}
 	options.module = ts.ModuleKind.CommonJS;
 	installSourceMapSupport();
+
 	return addHook((code, filename) => compile(code, filename, options), {
 		exts: Array.from(DEFAULT_EXTENSIONS),
 		...hookOpts,

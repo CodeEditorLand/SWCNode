@@ -34,6 +34,7 @@ export function readDefaultTsConfig(
 
 	try {
 		debug(`Read config file from ${fullTsConfigPath}`);
+
 		const { config } = ts.readConfigFile(fullTsConfigPath, ts.sys.readFile);
 
 		const { options, errors, fileNames } = ts.parseJsonConfigFileContent(
@@ -70,26 +71,36 @@ function toTsTarget(target: ts.ScriptTarget): Options["target"] {
 	switch (target) {
 		case ts.ScriptTarget.ES3:
 			return "es3";
+
 		case ts.ScriptTarget.ES5:
 			return "es5";
+
 		case ts.ScriptTarget.ES2015:
 			return "es2015";
+
 		case ts.ScriptTarget.ES2016:
 			return "es2016";
+
 		case ts.ScriptTarget.ES2017:
 			return "es2017";
+
 		case ts.ScriptTarget.ES2018:
 			return "es2018";
+
 		case ts.ScriptTarget.ES2019:
 			return "es2019";
+
 		case ts.ScriptTarget.ES2020:
 			return "es2020";
+
 		case ts.ScriptTarget.ES2021:
 			return "es2021";
+
 		case ts.ScriptTarget.ES2022:
 		case ts.ScriptTarget.ESNext:
 		case ts.ScriptTarget.Latest:
 			return "es2022";
+
 		case ts.ScriptTarget.JSON:
 			return "es5";
 	}
@@ -99,10 +110,13 @@ function toModule(moduleKind: ts.ModuleKind) {
 	switch (moduleKind) {
 		case ts.ModuleKind.CommonJS:
 			return "commonjs";
+
 		case ts.ModuleKind.UMD:
 			return "umd";
+
 		case ts.ModuleKind.AMD:
 			return "amd";
+
 		case ts.ModuleKind.ES2015:
 		case ts.ModuleKind.ES2020:
 		case ts.ModuleKind.ES2022:
@@ -111,6 +125,7 @@ function toModule(moduleKind: ts.ModuleKind) {
 		case ts.ModuleKind.NodeNext:
 		case ts.ModuleKind.None:
 			return "es6";
+
 		case ts.ModuleKind.System:
 			throw new TypeError("Do not support system kind module");
 	}
@@ -138,7 +153,9 @@ export function tsCompilerOptionsToSwcConfig(
 		filename.endsWith(".tsx") ||
 		filename.endsWith(".jsx") ||
 		Boolean(options.jsx);
+
 	const target = options.target ?? ts.ScriptTarget.ES2018;
+
 	return {
 		module: toModule(options.module ?? ts.ModuleKind.ES2015),
 		target: toTsTarget(target),
