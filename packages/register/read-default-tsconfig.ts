@@ -50,6 +50,7 @@ export function readDefaultTsConfig(
 
 		if (!errors.length) {
 			compilerOptions = options;
+
 			compilerOptions.files = fileNames;
 		} else {
 			console.info(

@@ -9,7 +9,9 @@ import type { LoaderContext } from "webpack";
 export function loader(
 	this: LoaderContext<{
 		compilerOptions?: CompilerOptions;
+
 		configFile?: string;
+
 		fastRefresh?: boolean;
 	}>,
 	source: string,
@@ -40,6 +42,7 @@ export function loader(
 			};
 		}
 	}
+
 	transform(source, this.resourcePath, swcOptions)
 		.then(({ code, map }) => callback(null, code, map))
 		.catch((err) => callback(err));

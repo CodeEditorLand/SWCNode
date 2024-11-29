@@ -30,7 +30,9 @@ const injectInlineSourceMap = ({
 	map,
 }: {
 	filename: string;
+
 	code: string;
+
 	map: string | undefined;
 }): string => {
 	if (map) {
@@ -42,6 +44,7 @@ const injectInlineSourceMap = ({
 
 		return `${code}\n${sourceMapContent}`;
 	}
+
 	return code;
 };
 
@@ -91,6 +94,7 @@ export function compile(
 	if (sourcecode == null) {
 		return;
 	}
+
 	if (
 		options &&
 		typeof options.fallbackToTs === "function" &&
@@ -147,7 +151,9 @@ export function register(
 	if (!process.env.SWCRC) {
 		options = Object.keys(options).length ? options : readDefaultTsConfig();
 	}
+
 	options.module = ts.ModuleKind.CommonJS;
+
 	installSourceMapSupport();
 
 	return addHook((code, filename) => compile(code, filename, options), {

@@ -110,6 +110,7 @@ async function run() {
 						.join(""),
 				)}`,
 			);
+
 			defer();
 		})
 		.run();
@@ -123,6 +124,7 @@ async function runAsync(parallel = 1, suite = asyncSuite) {
 	const task = new Promise<void>((resolve) => {
 		defer = resolve;
 	});
+
 	suite
 		.add({
 			name: "@swc-node/core",
@@ -174,6 +176,7 @@ async function runAsync(parallel = 1, suite = asyncSuite) {
 		})
 		.on("cycle", function (event: Benchmark.Event) {
 			event.target.hz = event.target!.hz! * parallel;
+
 			console.info(String(event.target));
 		})
 		.on("complete", function (this: Benchmark.Target & Benchmark.Suite) {
@@ -184,6 +187,7 @@ async function runAsync(parallel = 1, suite = asyncSuite) {
 						.join(""),
 				)}`,
 			);
+
 			defer();
 		})
 		.run();

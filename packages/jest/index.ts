@@ -48,6 +48,7 @@ export = {
 				...getJestTransformConfig(jestConfig),
 			});
 		}
+
 		return src;
 	},
 	getCacheKey(src: string, _filepath: string, config: Options) {

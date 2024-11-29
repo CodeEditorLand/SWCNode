@@ -12,22 +12,37 @@ const DEFAULT_ES_TARGET: JscTarget = "es2018";
 
 export interface Options {
 	target?: JscTarget;
+
 	module?: "commonjs" | "umd" | "amd" | "es6";
+
 	sourcemap?: Config["sourceMaps"];
+
 	jsx?: boolean;
+
 	experimentalDecorators?: boolean;
+
 	emitDecoratorMetadata?: boolean;
+
 	useDefineForClassFields?: boolean;
+
 	dynamicImport?: boolean;
+
 	esModuleInterop?: boolean;
+
 	keepClassNames?: boolean;
+
 	externalHelpers?: boolean;
+
 	react?: Partial<ReactConfig>;
+
 	baseUrl?: string;
+
 	paths?: {
 		[from: string]: [string];
 	};
+
 	swc?: SwcOptions;
+
 	ignoreDynamic?: boolean;
 }
 
@@ -37,6 +52,7 @@ function transformOption(
 	jest = false,
 ): SwcOptions {
 	const opts = options ?? {};
+
 	opts.esModuleInterop = opts.esModuleInterop ?? true;
 
 	const moduleType = options?.module ?? "commonjs";

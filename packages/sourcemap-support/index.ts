@@ -13,6 +13,7 @@ export function installSourceMapSupport() {
 					map: SourcemapMap.get(file),
 				};
 			}
+
 			return null;
 		},
 	});
