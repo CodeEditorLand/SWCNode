@@ -4,9 +4,9 @@
 		"p-timeout": "^6.1.2"
 	},
 	"devDependencies": {
+		"@codeeditorland-node/register": "0.0.1",
+		"@codeeditorland/core": "^1.6.6",
 		"@napi-rs/simple-git": "^0.1.16",
-		"@swc-node/register": "workspace:*",
-		"@swc/core": "^1.6.6",
 		"esmock": "^2.6.6",
 		"ipaddr.js": "^2.2.0",
 		"postgres": "^3.4.4",

@@ -13,6 +13,6 @@
 		"LICENSE"
 	],
 	"main": "lib/index.js",
-	"name": "@swc-node/sourcemap-support",
+	"name": "@codeeditorland-node/sourcemap-support",
 	"types": "lib/index.d.ts"
 }

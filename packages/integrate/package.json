@@ -1,10 +1,11 @@
 {
+	"dependencies": {},
 	"description": "Integrate testing",
 	"devDependencies": {
-		"@swc-node/core": "^1.13.1",
-		"@swc-node/register": "workspace:*",
-		"@swc/helpers": "^0.5.11",
+		"@codeeditorland-node/core": "^1.13.1",
+		"@codeeditorland-node/register": "0.0.1",
+		"@codeeditorland/helpers": "^0.5.11",
 		"sinon": "^19.0.0"
 	},
-	"name": "@swc-node/integrate"
+	"name": "@codeeditorland-node/integrate"
 }

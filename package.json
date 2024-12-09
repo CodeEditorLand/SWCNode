@@ -16,12 +16,13 @@
 			"@swc-node/register"
 		]
 	},
+	"dependencies": {},
 	"description": "Faster swc nodejs binding",
 	"devDependencies": {
 		"@babel/plugin-transform-typescript": "^7.24.7",
-		"@swc-node/core": "workspace:*",
-		"@swc-node/jest": "workspace:*",
-		"@swc-node/register": "workspace:*",
+		"@codeeditorland-node/core": "0.0.1",
+		"@codeeditorland-node/jest": "0.0.1",
+		"@codeeditorland-node/register": "0.0.1",
 		"@types/benchmark": "^2.1.5",
 		"@types/lodash": "^4.17.6",
 		"@types/node": "^22.0.0",
@@ -47,7 +48,7 @@
 			"prettier --write"
 		]
 	},
-	"name": "swc-node",
+	"name": "@codeeditorland/node",
 	"scripts": {
 		"bench": "node -r @swc-node/register ./bench/index.ts",
 		"build": "tsc -b tsconfig.json",

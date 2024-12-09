@@ -1,13 +1,13 @@
 {
 	"dependencies": {
-		"@node-rs/xxhash": "1.7.6",
-		"@swc-node/core": "1.13.3",
-		"@swc-node/register": "1.10.9"
+		"@codeeditorland-node/core": "1.13.3",
+		"@codeeditorland-node/register": "1.10.9",
+		"@node-rs/xxhash": "1.7.6"
 	},
 	"description": "swc preprocessor for jest with source map support",
 	"devDependencies": {
-		"@swc/core": "1.10.0",
-		"@swc/types": "0.1.17"
+		"@codeeditorland/core": "1.10.0",
+		"@codeeditorland/types": "0.1.17"
 	},
 	"files": [
 		"lib",
@@ -19,5 +19,5 @@
 		"url": "https://github.com/sponsors/Brooooooklyn"
 	},
 	"main": "./lib/index.js",
-	"name": "@swc-node/jest"
+	"name": "@codeeditorland-node/jest"
 }
