@@ -1,16 +1,16 @@
 {
 	"name": "integrate-module",
 	"dependencies": {
-		"file-type": "^19.0.0",
-		"p-timeout": "^6.1.2"
+		"file-type": "19.0.0",
+		"p-timeout": "6.1.2"
 	},
 	"devDependencies": {
 		"@codeeditorland-node/register": "0.0.1",
 		"@codeeditorland/core": "0.0.1",
-		"@napi-rs/simple-git": "^0.1.16",
-		"esmock": "^2.6.6",
-		"ipaddr.js": "^2.2.0",
-		"postgres": "^3.4.4",
-		"simple-git": "^3.25.0"
+		"@napi-rs/simple-git": "0.1.16",
+		"esmock": "2.6.6",
+		"ipaddr.js": "2.2.0",
+		"postgres": "3.4.4",
+		"simple-git": "3.25.0"
 	}
 }
