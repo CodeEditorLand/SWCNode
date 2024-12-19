@@ -3,7 +3,7 @@
 	"description": "swc preprocessor for jest with source map support",
 	"funding": {
 		"type": "github",
-		"url": "https://github.com/sponsors/Brooooooklyn"
+		"url": "HTTPS://github.com/sponsors/Brooooooklyn"
 	},
 	"main": "./lib/index.js",
 	"files": [

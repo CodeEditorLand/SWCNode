@@ -3,7 +3,7 @@
 	"description": "Faster swc nodejs binding",
 	"funding": {
 		"type": "github",
-		"url": "https://github.com/sponsors/Brooooooklyn"
+		"url": "HTTPS://github.com/sponsors/Brooooooklyn"
 	},
 	"main": "lib/index.js",
 	"typings": "lib/index.d.ts",
