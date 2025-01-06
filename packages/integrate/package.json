@@ -6,6 +6,6 @@
 		"@codeeditorland-node/core": "1.13.1",
 		"@codeeditorland-node/register": "0.0.1",
 		"@codeeditorland/helpers": "0.0.1",
-		"sinon": "19.0.0"
+		"sinon": "19.0.2"
 	}
 }
