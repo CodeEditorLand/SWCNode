@@ -1,7 +1,7 @@
 {
 	"name": "integrate-module",
 	"dependencies": {
-		"file-type": "19.6.0",
+		"file-type": "20.0.0",
 		"p-timeout": "6.1.4"
 	},
 	"devDependencies": {
