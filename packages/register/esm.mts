@@ -238,24 +238,21 @@ export const resolve: ResolveHook = async (specifier, context, nextResolve) => {
 		);
 	}
 
-	// local project file
-	if (path && isPathNotInNodeModules(path)) {
-		debug("resolved: typescript", specifier, path);
-		const url = new URL(join("file://", path));
-		return addShortCircuitSignal({
-			...context,
-			url: url.href,
-			format:
-				path.endsWith("cjs") ||
-				path.endsWith("cts") ||
-				moduleType === "commonjs" ||
-				!moduleType
-					? "commonjs"
-					: moduleType === "module"
-						? "module"
-						: "commonjs",
-		});
-	}
+  // local project file
+  if (path && isPathNotInNodeModules(path)) {
+    debug('resolved: typescript', specifier, path)
+    const url = new URL('file://' + join(path))
+    return addShortCircuitSignal({
+      ...context,
+      url: url.href,
+      format:
+        path.endsWith('cjs') || path.endsWith('cts') || moduleType === 'commonjs' || !moduleType
+          ? 'commonjs'
+          : moduleType === 'module'
+            ? 'module'
+            : 'commonjs',
+    })
+  }
 
 	try {
 		// files could not resolved by typescript or resolved as dts, fallback to use node resolver
