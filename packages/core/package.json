@@ -1,18 +1,18 @@
 {
-	"name": "@codeeditorland-node/core",
+	"dependencies": {},
 	"description": "Faster swc nodejs binding",
+	"devDependencies": {
+		"@codeeditorland/core": "0.0.1",
+		"@codeeditorland/types": "0.0.1"
+	},
+	"files": [
+		"lib"
+	],
 	"funding": {
 		"type": "github",
 		"url": "HTTPS://github.com/sponsors/Brooooooklyn"
 	},
 	"main": "lib/index.js",
-	"typings": "lib/index.d.ts",
-	"files": [
-		"lib"
-	],
-	"dependencies": {},
-	"devDependencies": {
-		"@codeeditorland/core": "0.0.1",
-		"@codeeditorland/types": "0.0.1"
-	}
+	"name": "@codeeditorland-node/core",
+	"typings": "lib/index.d.ts"
 }
