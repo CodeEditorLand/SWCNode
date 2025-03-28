@@ -1,23 +1,54 @@
 {
-	"name": "@codeeditorland-node/jest",
-	"description": "swc preprocessor for jest with source map support",
-	"funding": {
-		"type": "github",
-		"url": "HTTPS://github.com/sponsors/Brooooooklyn"
-	},
-	"main": "./lib/index.js",
-	"files": [
-		"lib",
-		"jest-preset.js",
-		"LICENSE"
-	],
-	"dependencies": {
-		"@codeeditorland-node/core": "1.13.3",
-		"@codeeditorland-node/register": "1.10.9",
-		"@node-rs/xxhash": "1.7.6"
-	},
-	"devDependencies": {
-		"@codeeditorland/core": "0.0.1",
-		"@codeeditorland/types": "0.0.1"
-	}
+  "name": "@swc-node/jest",
+  "version": "1.8.13",
+  "description": "swc preprocessor for jest with source map support",
+  "keywords": [
+    "swc",
+    "jest",
+    "ts-jest",
+    "napi",
+    "N-API",
+    "typescript",
+    "node-rs",
+    "napi-rs",
+    "ts-node"
+  ],
+  "author": "LongYinan <github@lyn.one>",
+  "homepage": "https://github.com/swc-project/swc-node",
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "files": [
+    "lib",
+    "jest-preset.js",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "dependencies": {
+    "@node-rs/xxhash": "^1.7.3",
+    "@swc-node/core": "^1.13.3",
+    "@swc-node/register": "^1.10.10"
+  },
+  "peerDependencies": {
+    "@swc/core": ">= 1.4.13",
+    "@swc/types": ">= 0.1",
+    "typescript": ">= 5.0"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.6.6",
+    "@swc/types": "^0.1.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swc-project/swc-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swc-project/swc-node/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Brooooooklyn"
+  }
 }

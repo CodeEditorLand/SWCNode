@@ -95,12 +95,18 @@ export function compile(
 		return;
 	}
 
-	if (
-		options &&
-		typeof options.fallbackToTs === "function" &&
-		options.fallbackToTs(filename)
-	) {
-		delete options.fallbackToTs;
+  let swcRegisterConfig: Options
+  if (process.env.SWCRC) {
+    // when SWCRC environment variable is set to true it will use swcrc file
+    swcRegisterConfig = {
+      swc: {
+        swcrc: true,
+        configFile: process.env.SWC_CONFIG_FILE
+      },
+    }
+  } else {
+    swcRegisterConfig = tsCompilerOptionsToSwcConfig(options, filename)
+  }
 
 		const { outputText, sourceMapText } = ts.transpileModule(sourcecode, {
 			fileName: filename,
