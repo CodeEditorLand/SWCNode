@@ -1,5 +1,5 @@
 {
-	"name": "swc-node",
+	"name": "@codeeditorland/node",
 	"description": "Faster swc nodejs binding",
 	"workspaces": [
 		"packages/*"
@@ -36,11 +36,12 @@
 			"@swc-node/register"
 		]
 	},
+	"dependencies": {},
 	"devDependencies": {
 		"@babel/plugin-transform-typescript": "^7.24.7",
-		"@swc-node/core": "workspace:*",
-		"@swc-node/jest": "workspace:*",
-		"@swc-node/register": "workspace:*",
+		"@codeeditorland-node/core": "workspace:*",
+		"@codeeditorland-node/jest": "workspace:*",
+		"@codeeditorland-node/register": "workspace:*",
 		"@types/benchmark": "^2.1.5",
 		"@types/lodash": "^4.17.6",
 		"@types/node": "^22.0.0",
