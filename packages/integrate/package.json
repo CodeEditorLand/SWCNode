@@ -3,9 +3,9 @@
 	"description": "Integrate testing",
 	"dependencies": {},
 	"devDependencies": {
-		"@codeeditorland-node/core": "^1.13.1",
+		"@codeeditorland-node/core": "1.13.1",
 		"@codeeditorland-node/register": "workspace:*",
-		"@codeeditorland/helpers": "^0.5.11",
-		"sinon": "^20.0.0"
+		"@codeeditorland/helpers": "0.5.11",
+		"sinon": "20.0.0"
 	}
 }

@@ -12,8 +12,8 @@
 		"index.js"
 	],
 	"dependencies": {
-		"@codeeditorland-node/core": "^1.13.3",
-		"@codeeditorland-node/register": "^1.10.10"
+		"@codeeditorland-node/core": "1.13.3",
+		"@codeeditorland-node/register": "1.10.10"
 	},
 	"devDependencies": {}
 }

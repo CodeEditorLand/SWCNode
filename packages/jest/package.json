@@ -12,12 +12,12 @@
 		"LICENSE"
 	],
 	"dependencies": {
-		"@codeeditorland-node/core": "^1.13.3",
-		"@codeeditorland-node/register": "^1.10.10",
-		"@node-rs/xxhash": "^1.7.3"
+		"@codeeditorland-node/core": "1.13.3",
+		"@codeeditorland-node/register": "1.10.10",
+		"@node-rs/xxhash": "1.7.6"
 	},
 	"devDependencies": {
-		"@codeeditorland/core": "^1.6.6",
-		"@codeeditorland/types": "^0.1.9"
+		"@codeeditorland/core": "1.6.6",
+		"@codeeditorland/types": "0.1.9"
 	}
 }
