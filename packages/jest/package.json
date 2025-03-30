@@ -1,16 +1,41 @@
 {
 	"name": "@codeeditorland-node/jest",
+	"version": "0.0.1",
+	"private": false,
 	"description": "swc preprocessor for jest with source map support",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/SWCNode.git"
+	},
 	"funding": {
 		"type": "github",
 		"url": "https://github.com/sponsors/Brooooooklyn"
 	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./lib/index.js",
 	"files": [
 		"lib",
 		"jest-preset.js",
 		"LICENSE"
 	],
+	"scripts": {
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
 	"dependencies": {
 		"@codeeditorland-node/core": "1.13.3",
 		"@codeeditorland-node/register": "1.10.10",
@@ -18,6 +43,10 @@
 	},
 	"devDependencies": {
 		"@codeeditorland/core": "1.6.6",
-		"@codeeditorland/types": "0.1.9"
+		"@codeeditorland/types": "0.1.9",
+		"@playform/build": "0.2.1"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }

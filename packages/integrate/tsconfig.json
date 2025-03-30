@@ -1,13 +1,27 @@
 {
-	"extends": "../../tsconfig.json",
 	"compilerOptions": {
+		"allowImportingTsExtensions": true,
+		"baseUrl": "./",
 		"composite": true,
-		"rootDir": ".",
-		"outDir": "./lib",
 		"jsx": "react-jsx",
-		"types": ["node", "jest"],
-		"allowImportingTsExtensions": true
+		"outDir": "Target",
+		"rootDir": "src",
+		"types": [
+			"node",
+			"jest"
+		]
 	},
+	"exclude": [
+		"lib"
+	],
+	"extends": "@playform/build/tsconfig",
+	"files": [
+		"./package.json"
+	],
+	"include": [
+		".",
+		"src"
+	],
 	"references": [
 		{
 			"path": "../core"
@@ -15,8 +29,5 @@
 		{
 			"path": "../register"
 		}
-	],
-	"include": ["."],
-	"files": ["./package.json"],
-	"exclude": ["lib"]
+	]
 }

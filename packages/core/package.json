@@ -1,18 +1,47 @@
 {
 	"name": "@codeeditorland-node/core",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Faster swc nodejs binding",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/SWCNode.git"
+	},
 	"funding": {
 		"type": "github",
 		"url": "HTTPS://github.com/sponsors/Brooooooklyn"
 	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "lib/index.js",
 	"typings": "lib/index.d.ts",
 	"files": [
 		"lib"
 	],
+	"scripts": {
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
 	"dependencies": {},
 	"devDependencies": {
 		"@codeeditorland/core": "0.0.1",
-		"@codeeditorland/types": "0.0.1"
+		"@codeeditorland/types": "0.0.1",
+		"@playform/build": "0.2.1"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }

@@ -1,11 +1,40 @@
 {
 	"name": "@codeeditorland-node/integrate",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Integrate testing",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/SWCNode.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
+	"scripts": {
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
 	"dependencies": {},
 	"devDependencies": {
 		"@codeeditorland-node/core": "1.13.1",
 		"@codeeditorland-node/register": "workspace:*",
 		"@codeeditorland/helpers": "0.5.11",
+		"@playform/build": "0.2.1",
 		"sinon": "20.0.0"
+	},
+	"publishConfig": {
+		"access": "public"
 	}
 }

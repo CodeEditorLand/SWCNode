@@ -1,28 +1,16 @@
 {
 	"compilerOptions": {
-		"jsx": "react-jsx",
 		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./",
 		"declaration": true,
 		"downlevelIteration": true,
 		"emitDecoratorMetadata": true,
-		"experimentalDecorators": true,
-		"importHelpers": false,
-		"module": "CommonJS",
-		"moduleResolution": "node",
-		"newLine": "LF",
-		"noEmitHelpers": false,
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"strict": true,
-		"skipLibCheck": true,
-		"forceConsistentCasingInFileNames": true,
-		"preserveSymlinks": true,
-		"target": "ES2018",
-		"sourceMap": true,
 		"esModuleInterop": true,
-		"stripInternal": true,
-		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"importHelpers": false,
 		"importsNotUsedAsValues": "remove",
+		"jsx": "react-jsx",
 		"lib": [
 			"dom",
 			"DOM.Iterable",
@@ -35,21 +23,56 @@
 			"ES2020",
 			"esnext"
 		],
-		"baseUrl": "./packages",
+		"module": "CommonJS",
+		"moduleResolution": "node",
+		"newLine": "LF",
+		"noEmitHelpers": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"outDir": "Target",
 		"paths": {
-			"@swc-node/core": ["./core/index.ts"],
-			"@swc-node/register/*": ["./register/*"],
-			"@integrate/*": ["./integrate/src/*"]
-		}
+			"@integrate/*": [
+				"./integrate/src/*"
+			],
+			"@swc-node/core": [
+				"./core/index.ts"
+			],
+			"@swc-node/register/*": [
+				"./register/*"
+			]
+		},
+		"preserveSymlinks": true,
+		"resolveJsonModule": true,
+		"rootDir": "src",
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+		"stripInternal": true,
+		"target": "ES2018"
 	},
-	"references": [
-		{ "path": "./packages/core" },
-		{ "path": "./packages/register" },
-		{ "path": "./packages/register/tsconfig.esm.json" },
-		{ "path": "./packages/jest" },
-		{ "path": "./packages/sourcemap-support" },
-		{ "path": "./packages/loader" }
+	"extends": "@playform/build/tsconfig",
+	"files": [],
+	"include": [
+		"src"
 	],
-	"include": [],
-	"files": []
+	"references": [
+		{
+			"path": "./packages/core"
+		},
+		{
+			"path": "./packages/register"
+		},
+		{
+			"path": "./packages/register/tsconfig.esm.json"
+		},
+		{
+			"path": "./packages/jest"
+		},
+		{
+			"path": "./packages/sourcemap-support"
+		},
+		{
+			"path": "./packages/loader"
+		}
+	]
 }

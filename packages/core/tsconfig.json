@@ -1,10 +1,16 @@
 {
-	"extends": "../../tsconfig.json",
 	"compilerOptions": {
+		"baseUrl": "./",
 		"composite": true,
-		"rootDir": ".",
-		"outDir": "./lib"
+		"outDir": "Target",
+		"rootDir": "src"
 	},
-	"include": ["."],
-	"exclude": ["./lib"]
+	"exclude": [
+		"./lib"
+	],
+	"extends": "@playform/build/tsconfig",
+	"include": [
+		".",
+		"src"
+	]
 }
