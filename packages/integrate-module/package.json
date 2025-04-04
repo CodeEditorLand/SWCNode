@@ -33,7 +33,7 @@
 		"@codeeditorland-node/register": "workspace:*",
 		"@codeeditorland/core": "1.6.6",
 		"@napi-rs/simple-git": "0.1.19",
-		"@playform/build": "0.2.1",
+		"@playform/build": "0.2.2",
 		"esmock": "2.7.0",
 		"ipaddr.js": "2.2.0",
 		"postgres": "3.4.5",

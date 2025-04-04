@@ -68,7 +68,7 @@
 	"devDependencies": {
 		"@codeeditorland/core": "1.6.6",
 		"@codeeditorland/helpers": "0.5.11",
-		"@playform/build": "0.2.1",
+		"@playform/build": "0.2.2",
 		"@types/debug": "4.1.12",
 		"lodash": "4.17.21",
 		"sinon": "20.0.0"
