@@ -31,7 +31,7 @@
 		"@codeeditorland-node/core": "1.13.1",
 		"@codeeditorland-node/register": "workspace:*",
 		"@codeeditorland/helpers": "0.5.11",
-		"@playform/build": "0.2.2",
+		"@playform/build": "0.2.3",
 		"sinon": "20.0.0"
 	},
 	"publishConfig": {

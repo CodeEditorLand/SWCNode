@@ -39,7 +39,7 @@
 	"devDependencies": {
 		"@codeeditorland/core": "0.0.1",
 		"@codeeditorland/types": "0.0.1",
-		"@playform/build": "0.2.2"
+		"@playform/build": "0.2.3"
 	},
 	"publishConfig": {
 		"access": "public"
