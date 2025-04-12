@@ -7,6 +7,8 @@ import * as ts from "typescript";
 
 const debug = debugFactory("@swc-node");
 
+const configCache: Record<string, Partial<ts.CompilerOptions & { fallbackToTs: (path: string) => boolean }>> = {}
+
 export function readDefaultTsConfig(
 	tsConfigPath = process.env.SWC_NODE_PROJECT ??
 		process.env.TS_NODE_PROJECT ??
@@ -28,9 +30,13 @@ export function readDefaultTsConfig(
 
 	const fullTsConfigPath = resolve(tsConfigPath);
 
-	if (!existsSync(fullTsConfigPath)) {
-		return compilerOptions;
-	}
+  if (fullTsConfigPath in configCache) {
+    return configCache[fullTsConfigPath]
+  }
+
+  if (!existsSync(fullTsConfigPath)) {
+    return compilerOptions
+  }
 
 	try {
 		debug(`Read config file from ${fullTsConfigPath}`);
@@ -48,24 +54,9 @@ export function readDefaultTsConfig(
 			options.baseUrl = dirname(fullTsConfigPath);
 		}
 
-		if (!errors.length) {
-			compilerOptions = options;
+  configCache[fullTsConfigPath] = compilerOptions
 
-			compilerOptions.files = fileNames;
-		} else {
-			console.info(
-				yellow(
-					`Convert compiler options from json failed, ${errors.map((d) => d.messageText).join("\n")}`,
-				),
-			);
-		}
-	} catch (e) {
-		console.info(
-			yellow(`Read ${tsConfigPath} failed: ${(e as Error).message}`),
-		);
-	}
-
-	return compilerOptions;
+  return compilerOptions
 }
 
 function toTsTarget(target: ts.ScriptTarget): Options["target"] {
@@ -146,64 +137,43 @@ function getUseDefineForClassFields(
 	);
 }
 
-export function tsCompilerOptionsToSwcConfig(
-	options: ts.CompilerOptions,
-	filename: string,
-): Options {
-	const isJsx =
-		filename.endsWith(".tsx") ||
-		filename.endsWith(".jsx") ||
-		Boolean(options.jsx);
-
-	const target = options.target ?? ts.ScriptTarget.ES2018;
-
-	return {
-		module: toModule(options.module ?? ts.ModuleKind.ES2015),
-		target: toTsTarget(target),
-		jsx: isJsx,
-		// eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
-		sourcemap:
-			options.sourceMap || options.inlineSourceMap
-				? "inline"
-				: Boolean(options.sourceMap),
-		experimentalDecorators: options.experimentalDecorators ?? false,
-		emitDecoratorMetadata: options.emitDecoratorMetadata ?? false,
-		useDefineForClassFields: getUseDefineForClassFields(options, target),
-		esModuleInterop: options.esModuleInterop ?? false,
-		dynamicImport: true,
-		keepClassNames: true,
-		externalHelpers: Boolean(options.importHelpers),
-		react:
-			(options.jsxFactory ??
-			options.jsxFragmentFactory ??
-			options.jsx ??
-			options.jsxImportSource)
-				? {
-						pragma: options.jsxFactory,
-						pragmaFrag: options.jsxFragmentFactory,
-						importSource: options.jsxImportSource ?? "react",
-						runtime:
-							(options.jsx ?? 0) >= ts.JsxEmit.ReactJSX
-								? "automatic"
-								: "classic",
-						useBuiltins: true,
-					}
-				: undefined,
-		baseUrl: options.baseUrl ? resolve(options.baseUrl) : undefined,
-		paths: Object.fromEntries(
-			Object.entries(options.paths ?? {}).map(
-				([aliasKey, aliasPaths]) => [
-					aliasKey,
-					((aliasPaths as string[]) ?? []).map((path) =>
-						resolve(options.baseUrl ?? "./", path),
-					),
-				],
-			),
-		) as Options["paths"],
-		ignoreDynamic: Boolean(process.env.SWC_NODE_IGNORE_DYNAMIC),
-		swc: {
-			sourceRoot: options.sourceRoot,
-			inputSourceMap: options.inlineSourceMap,
-		},
-	};
+export function tsCompilerOptionsToSwcConfig(options: ts.CompilerOptions, filename: string): Options {
+  const isJsx = filename.endsWith('.tsx') || filename.endsWith('.jsx') || Boolean(options.jsx)
+  const target = options.target ?? ts.ScriptTarget.ES2018
+  return {
+    module: toModule(options.module ?? ts.ModuleKind.ES2015),
+    target: toTsTarget(target),
+    jsx: isJsx,
+    // eslint-disable-next-line @typescript-eslint/prefer-nullish-coalescing
+    sourcemap: options.sourceMap || options.inlineSourceMap ? 'inline' : Boolean(options.sourceMap),
+    experimentalDecorators: options.experimentalDecorators ?? false,
+    emitDecoratorMetadata: options.emitDecoratorMetadata ?? false,
+    useDefineForClassFields: getUseDefineForClassFields(options, target),
+    esModuleInterop: options.esModuleInterop ?? false,
+    dynamicImport: true,
+    keepClassNames: true,
+    externalHelpers: Boolean(options.importHelpers),
+    react:
+      (options.jsxFactory ?? options.jsxFragmentFactory ?? options.jsx ?? options.jsxImportSource)
+        ? {
+            pragma: options.jsxFactory,
+            pragmaFrag: options.jsxFragmentFactory,
+            importSource: options.jsxImportSource ?? 'react',
+            runtime: (options.jsx ?? 0) >= ts.JsxEmit.ReactJSX ? 'automatic' : 'classic',
+            useBuiltins: true,
+          }
+        : undefined,
+    baseUrl: options.baseUrl ? resolve(options.baseUrl) : undefined,
+    paths: Object.fromEntries(
+      Object.entries(options.paths ?? {}).map(([aliasKey, aliasPaths]) => [
+        aliasKey,
+        ((aliasPaths as string[]) ?? []).map((path) => resolve(options.baseUrl ?? './', path)),
+      ]),
+    ) as Options['paths'],
+    ignoreDynamic: Boolean(process.env.SWC_NODE_IGNORE_DYNAMIC),
+    swc: {
+      sourceRoot: options.sourceRoot,
+      inputSourceMap: options.inlineSourceMap,
+    },
+  }
 }
