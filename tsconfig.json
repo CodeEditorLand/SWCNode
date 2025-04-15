@@ -54,6 +54,7 @@
 	"files": [],
 	"include": [
 		"src",
+		"src",
 		"src"
 	],
 	"references": [
