@@ -1,44 +1,47 @@
 {
-  "name": "@swc-node/sourcemap-support",
-  "version": "0.5.1",
-  "description": "Runtime sourcemap support in NodeJS",
-  "keywords": [
-    "swc",
-    "ts-node",
-    "N-API",
-    "NAPI",
-    "napi-rs",
-    "node-rs",
-    "rust",
-    "esbuild",
-    "typescript"
-  ],
-  "author": "LongYinan <github@lyn.one>",
-  "homepage": "https://github.com/swc-project/swc-node",
-  "license": "MIT",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib",
-    "README.md",
-    "LICENSE"
-  ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/swc-project/swc-node.git"
-  },
-  "dependencies": {
-    "source-map-support": "0.5.21",
-    "tslib": "2.8.1"
-  },
-  "bugs": {
-    "url": "https://github.com/swc-project/swc-node/issues"
-  },
-  "devDependencies": {
-    "@types/source-map-support": "0.5.10"
-  }
+	"name": "@codeeditorland-node/sourcemap-support",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Runtime sourcemap support in NodeJS",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/SWCNode.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
+	"main": "lib/index.js",
+	"types": "lib/index.d.ts",
+	"files": [
+		"lib",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"prepublishOnly": "Build 'Source/**/*.ts'"
+	},
+	"dependencies": {
+		"source-map-support": "0.5.21",
+		"tslib": "2.8.1"
+	},
+	"devDependencies": {
+		"@playform/build": "0.2.3",
+		"@types/source-map-support": "0.5.10"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
