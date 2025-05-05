@@ -1,49 +1,53 @@
 {
-	"name": "@codeeditorland-node/loader",
-	"version": "0.0.1",
-	"private": false,
-	"description": "Webpack loader powered by swc",
-	"keywords": [
-		"codeeditorland",
-		"land",
-		"playform"
-	],
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode#readme",
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/SWCNode.git"
-	},
-	"funding": {
-		"type": "github",
-		"url": "https://github.com/sponsors/Brooooooklyn"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Source 🖋️ Open 👐🏻",
-		"email": "Source/Open@Editor.Land",
-		"url": "HTTPS://Editor.Land"
-	},
-	"type": "module",
-	"main": "./index.js",
-	"files": [
-		"lib",
-		"LICENSE",
-		"index.js"
-	],
-	"scripts": {
-		"prepublishOnly": "Build 'Source/**/*.ts'"
-	},
-	"dependencies": {
-		"@codeeditorland-node/core": "1.13.3",
-		"@codeeditorland-node/register": "1.10.10"
-	},
-	"devDependencies": {
-		"@playform/build": "0.2.3"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@swc-node/loader",
+  "version": "1.5.13",
+  "description": "Webpack loader powered by swc",
+  "keywords": [
+    "swc",
+    "babel",
+    "loader",
+    "ts-loader",
+    "babel-loader",
+    "swc-loader",
+    "napi-rs",
+    "napi",
+    "node-api",
+    "tsc"
+  ],
+  "author": "LongYinan <longyinan.brooklyn@bytedance.com>",
+  "homepage": "https://github.com/swc-project/swc-node",
+  "license": "MIT",
+  "main": "./index.js",
+  "files": [
+    "lib",
+    "LICENSE",
+    "index.js"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "dependencies": {
+    "@swc-node/core": "^1.13.3",
+    "@swc-node/register": "^1.10.10"
+  },
+  "peerDependencies": {
+    "typescript": ">= 4.3",
+    "webpack": ">= 5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swc-project/swc-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swc-project/swc-node/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Brooooooklyn"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "webpack": "^5.92.1"
+  }
 }

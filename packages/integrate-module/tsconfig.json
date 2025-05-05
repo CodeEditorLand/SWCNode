@@ -1,25 +1,15 @@
 {
-	"compilerOptions": {
-		"baseUrl": "./",
-		"composite": true,
-		"jsx": "react-jsx",
-		"module": "ESNext",
-		"outDir": "Target",
-		"paths": {
-			"@subdirectory/*": [
-				"./src/subdirectory/*"
-			]
-		},
-		"rootDir": "src",
-		"target": "ESNext"
-	},
-	"extends": "@playform/build/tsconfig",
-	"include": [
-		"src",
-		"package.json",
-		"src",
-		"src",
-		"src",
-		"src"
-	]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "composite": true,
+    "jsx": "react-jsx",
+    "outDir": "dist",
+    "baseUrl": "./",
+    "paths": {
+      "@subdirectory/*": ["./src/subdirectory/*"]
+    }
+  },
+  "include": ["src", "package.json"]
 }

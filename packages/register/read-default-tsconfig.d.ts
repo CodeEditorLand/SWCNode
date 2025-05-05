@@ -1,1 +1,1 @@
-export * from "./lib/read-default-tsconfig";
+export * from './lib/read-default-tsconfig'

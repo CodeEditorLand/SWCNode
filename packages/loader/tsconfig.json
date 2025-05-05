@@ -1,27 +1,11 @@
 {
-	"compilerOptions": {
-		"baseUrl": "./",
-		"composite": true,
-		"outDir": "Target",
-		"rootDir": "src"
-	},
-	"exclude": [
-		"lib"
-	],
-	"extends": "@playform/build/tsconfig",
-	"include": [
-		".",
-		"src",
-		"src",
-		"src",
-		"src"
-	],
-	"references": [
-		{
-			"path": "../core"
-		},
-		{
-			"path": "../register"
-		}
-	]
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "./src",
+    "outDir": "./lib"
+  },
+  "include": ["."],
+  "exclude": ["lib"],
+  "references": [{ "path": "../core" }, { "path": "../register" }]
 }

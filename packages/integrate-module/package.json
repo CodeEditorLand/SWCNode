@@ -1,45 +1,24 @@
 {
-	"name": "integrate-module",
-	"version": "0.0.1",
-	"private": false,
-	"keywords": [
-		"codeeditorland",
-		"land",
-		"playform"
-	],
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode#readme",
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/SWCNode.git"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Source 🖋️ Open 👐🏻",
-		"email": "Source/Open@Editor.Land",
-		"url": "HTTPS://Editor.Land"
-	},
-	"type": "module",
-	"scripts": {
-		"prepublishOnly": "Build 'Source/**/*.ts'"
-	},
-	"dependencies": {
-		"file-type": "20.5.0",
-		"p-timeout": "6.1.4"
-	},
-	"devDependencies": {
-		"@codeeditorland-node/register": "workspace:*",
-		"@codeeditorland/core": "1.6.6",
-		"@napi-rs/simple-git": "0.1.19",
-		"@playform/build": "0.2.3",
-		"esmock": "2.7.0",
-		"ipaddr.js": "2.2.0",
-		"postgres": "3.4.5",
-		"simple-git": "3.27.0"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "integrate-module",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "file-type": "^20.0.0",
+    "p-timeout": "^6.1.2"
+  },
+  "devDependencies": {
+    "@napi-rs/simple-git": "^0.1.16",
+    "@swc/core": "^1.6.6",
+    "@swc-node/register": "workspace:*",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "esmock": "^2.6.6",
+    "ipaddr.js": "^2.2.0",
+    "postgres": "^3.4.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "simple-git": "^3.25.0",
+    "typescript": "^5.5.3"
+  }
 }

@@ -1,47 +1,55 @@
 {
-	"name": "@codeeditorland-node/core",
-	"version": "0.0.1",
-	"private": false,
-	"description": "Faster swc nodejs binding",
-	"keywords": [
-		"codeeditorland",
-		"land",
-		"playform"
-	],
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode#readme",
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/SWCNode/issues"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+HTTPS://github.com/CodeEditorLand/SWCNode.git"
-	},
-	"funding": {
-		"type": "github",
-		"url": "HTTPS://github.com/sponsors/Brooooooklyn"
-	},
-	"license": "SEE LICENSE IN LICENSE",
-	"author": {
-		"name": "Source 🖋️ Open 👐🏻",
-		"email": "Source/Open@Editor.Land",
-		"url": "HTTPS://Editor.Land"
-	},
-	"type": "module",
-	"main": "lib/index.js",
-	"typings": "lib/index.d.ts",
-	"files": [
-		"lib"
-	],
-	"scripts": {
-		"prepublishOnly": "Build 'Source/**/*.ts'"
-	},
-	"dependencies": {},
-	"devDependencies": {
-		"@codeeditorland/core": "0.0.1",
-		"@codeeditorland/types": "0.0.1",
-		"@playform/build": "0.2.3"
-	},
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@swc-node/core",
+  "version": "1.13.3",
+  "description": "Faster swc nodejs binding",
+  "keywords": [
+    "swc",
+    "babel",
+    "esbuild",
+    "rust",
+    "n-api",
+    "napi",
+    "node-rs",
+    "uglify",
+    "napi-rs",
+    "terser",
+    "webpack",
+    "ts-node",
+    "typescript",
+    "tsc"
+  ],
+  "author": "LongYinan <github@lyn.one>",
+  "homepage": "https://github.com/swc-project/swc-node",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swc-project/swc-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swc-project/swc-node/issues"
+  },
+  "peerDependencies": {
+    "@swc/core": ">= 1.4.13",
+    "@swc/types": ">= 0.1"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.6.6",
+    "@swc/types": "^0.1.9"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/Brooooooklyn"
+  }
 }
