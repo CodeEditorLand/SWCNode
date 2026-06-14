@@ -52,7 +52,7 @@
     "benchmark": "^2.1.4",
     "colorette": "^2.0.20",
     "cross-env": "^7.0.3",
-    "esbuild": "^0.25.5",
+    "esbuild": "^0.28.1",
     "husky": "^9.1.7",
     "jest": "^30.0.0",
     "lerna": "8.2.2",
