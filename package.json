@@ -36,35 +36,35 @@
     "postinstall": "husky"
   },
   "devDependencies": {
-    "@babel/core": "^7.27.4",
-    "@babel/plugin-transform-typescript": "^7.27.1",
-    "@babel/preset-env": "^7.27.2",
-    "@babel/preset-typescript": "^7.27.1",
-    "@swc-node/core": "1.13.3",
-    "@swc-node/jest": "1.8.13",
-    "@swc-node/register": "1.10.10",
+    "@babel/core": "^8.0.1",
+    "@babel/plugin-transform-typescript": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "@babel/preset-typescript": "^8.0.1",
+    "@swc-node/core": "1.15.0",
+    "@swc-node/jest": "1.10.1",
+    "@swc-node/register": "1.12.1",
     "@types/babel__core": "^7.20.5",
     "@types/benchmark": "^2.1.5",
-    "@types/lodash": "^4.17.17",
-    "@types/node": "^24.0.0",
-    "@types/sinon": "^17.0.4",
-    "ava": "^6.4.0",
+    "@types/lodash": "^4.17.24",
+    "@types/node": "^26.1.1",
+    "@types/sinon": "^22.0.0",
+    "ava": "^8.0.1",
     "benchmark": "^2.1.4",
     "colorette": "^2.0.20",
-    "cross-env": "^7.0.3",
-    "esbuild": "^0.25.5",
+    "cross-env": "^10.1.0",
+    "esbuild": "^0.28.1",
     "husky": "^9.1.7",
-    "jest": "^30.0.0",
-    "lerna": "8.2.2",
-    "lint-staged": "^16.1.0",
-    "lodash": "^4.17.21",
-    "oxlint": "^0.18.1",
-    "prettier": "^3.5.3",
-    "react": "^19.1.0",
+    "jest": "^30.4.2",
+    "lerna": "9.0.7",
+    "lint-staged": "^17.1.0",
+    "lodash": "^4.18.1",
+    "oxlint": "^1.74.0",
+    "prettier": "^3.9.5",
+    "react": "^19.2.7",
     "rxjs": "^7.8.2",
-    "sinon": "^20.0.0",
+    "sinon": "^22.0.0",
     "tslib": "^2.8.1",
-    "typescript": "^5.8.3"
+    "typescript": "^7.0.2"
   },
   "lint-staged": {
     "*.@(js|ts|tsx|mts)": [
@@ -98,5 +98,5 @@
       "SWC_NODE_PROJECT": "./tsconfig.test.json"
     }
   },
-  "packageManager": "pnpm@10.10.0"
+  "packageManager": "pnpm@11.15.0"
 }

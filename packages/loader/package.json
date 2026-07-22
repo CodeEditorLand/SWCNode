@@ -28,12 +28,12 @@
     "access": "public"
   },
   "dependencies": {
-    "@swc-node/core": "^1.13.3",
-    "@swc-node/register": "^1.10.10"
+    "@swc-node/core": "^1.15.0",
+    "@swc-node/register": "^1.12.1"
   },
   "peerDependencies": {
-    "typescript": ">=5.8",
-    "webpack": ">=5.99.9"
+    "typescript": ">=7.0",
+    "webpack": ">=5.108.4"
   },
   "repository": {
     "type": "git",
