@@ -45,8 +45,8 @@
     "@swc-node/register": "1.12.1",
     "@types/babel__core": "^7.20.5",
     "@types/benchmark": "^2.1.5",
-    "@types/lodash": "^4.17.24",
-    "@types/node": "^26.1.1",
+    "@types/lodash": "^4.17.25",
+    "@types/node": "^26.1.2",
     "@types/sinon": "^22.0.0",
     "ava": "^8.0.1",
     "benchmark": "^2.1.4",
@@ -55,14 +55,14 @@
     "esbuild": "^0.28.1",
     "husky": "^9.1.7",
     "jest": "^30.4.2",
-    "lerna": "9.0.7",
-    "lint-staged": "^17.1.0",
+    "lerna": "10.0.0",
+    "lint-staged": "^17.3.0",
     "lodash": "^4.18.1",
-    "oxlint": "^1.74.0",
-    "prettier": "^3.9.5",
-    "react": "^19.2.7",
+    "oxlint": "^1.76.0",
+    "prettier": "^3.9.6",
+    "react": "^19.2.8",
     "rxjs": "^7.8.2",
-    "sinon": "^22.0.0",
+    "sinon": "^22.1.0",
     "tslib": "^2.8.1",
     "typescript": "^7.0.2"
   },
@@ -98,5 +98,5 @@
       "SWC_NODE_PROJECT": "./tsconfig.test.json"
     }
   },
-  "packageManager": "pnpm@11.15.0"
+  "packageManager": "pnpm@11.18.0"
 }

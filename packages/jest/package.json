@@ -37,8 +37,8 @@
     "typescript": ">=7.0"
   },
   "devDependencies": {
-    "@swc/core": "^1.11.31",
-    "@swc/types": "^0.1.9"
+    "@swc/core": "^1.15.47",
+    "@swc/types": "^0.1.28"
   },
   "repository": {
     "type": "git",
